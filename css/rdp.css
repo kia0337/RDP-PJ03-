@@ -1,0 +1,170 @@
+.wrapper {
+    margin: 0 auto;
+    font-family: Nunito Sans, 'Times New Roman', Times, serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.button {
+    text-align: center;
+    border-radius: 2px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.20);
+    outline: 0;
+    border: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.title {
+    color: #E3B873;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    letter-spacing: -1.89px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #181818;
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+}
+
+.input__span {
+    color: rgba(54, 54, 54, 0.50);
+}
+
+.input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #363636;
+    background-color: rgba(28, 28, 28, 0)
+}
+
+.header {
+    background-color: black;
+}
+
+.container {
+    max-width: 1438px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 83px;
+}
+
+.logo {
+    color: #E3B873;
+
+}
+
+.telefon a {
+    text-decoration: none;
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav__item {
+    margin-right: 47px;
+}
+
+.header-nav__link-marked {
+    color: #E3B873;
+    text-decoration: none;
+}
+
+.header-nav__link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.button-request {
+    padding: 13px 33px;
+    font-size: 11px;
+}
+
+.calculate {
+    position: relative;
+    overflow: hidden;
+    height: 707px;
+    width: 100%;
+    z-index: 3;
+    background-image: url(../img/calcback.jpg);
+    background-size: cover;
+}
+
+.calculate::before {
+    background: rgba(0, 0, 0, 0.70);
+    /*задаем цвет и прозрачность затемнения*/
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 707px;
+    z-index: -1;
+}
+
+.calculate-container {
+    height: 707px;
+    padding: 194px;
+}
+
+h1 {
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 132.825%;
+    text-transform: uppercase;
+}
+
+
+.marked {
+    color: #E3B873;
+
+}
+
+.calculate-content__text {
+    width: 504px;
+    color: #FFF;
+    font-size: 22px;
+    font-family: Nunito Sans;
+    line-height: 163.68%;
+    margin-top: 19px;
+    margin-bottom: 41px;
+}
+
+.button-calc {
+    margin-right: 20px;
+    font-size: 11px;
+    padding: 20px 42px;
+    font-style: italic;
+}
+
+.button-submit {
+    border: 1px solid #FFF;
+    font-size: 11px;
+    font-style: italic;
+    padding: 20px 23px;
+    background-color: rgba(28, 28, 28, 0);
+}
