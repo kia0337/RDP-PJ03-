@@ -5,6 +5,7 @@
 
 body * {
     box-sizing: border-box;
+    /*эта строчка влияет на margin про который ты говорил но если ее убрать все ломается*/
 }
 
 .button {
@@ -167,4 +168,77 @@ h1 {
     font-style: italic;
     padding: 20px 23px;
     background-color: rgba(28, 28, 28, 0);
+}
+
+.completed-container {
+    margin-top: -16px;
+    height: 1074px;
+    background-color: #131313;
+}
+
+.completed-navigation {
+    display: flex;
+    margin-left: 881px;
+    padding-top: 107px;
+}
+
+.completed-navigation__city {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.30);
+    font-family: Yeseva One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-right: 61px;
+}
+
+.completed-navigation__city-rostov {
+    text-decoration: underline;
+    color: #E3B873;
+    list-style: none;
+    font-family: Yeseva One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    margin-right: 61px;
+}
+
+.title-complited {
+    color: #E3B873;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    /* 37.422px */
+    letter-spacing: -1.89px;
+    text-transform: uppercase;
+}
+
+.comleted-box {
+    display: flex;
+}
+
+.completed-text {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190.96%;
+}
+
+.title-card {
+    font-size: 18px;
+    line-height: 138.6%;
+}
+
+.comleted-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 190.96%;
 }
