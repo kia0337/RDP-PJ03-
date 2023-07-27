@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container header-content">
+            <div class="header-container header-content">
                 <div class="logo">
                     IC "Repair Design Project"
                 </div>
@@ -44,7 +44,7 @@
         </header>
         <main>
             <section class="calculate">
-                <div class="container calculate-container">
+                <div class="main-container calculate-container">
                     <div class="calculate-content">
                         <h1> Turnkey Repair in the <br>city of <span class="marked"> Rostov-on-Don</span> </h1>
                         <div class="calculate-content__text">
@@ -58,25 +58,21 @@
                 </div>
             </section>
             <section class="completed">
-                <div class="completed-container">
+                <div class="main-container completed-container">
                     <ul class="completed-navigation">
                         <li class="completed-navigation__city-rostov"> Rostov-on-Don, Admiral</li>
                         <li class="completed-navigation__city">Sochi Thieves</li>
                         <li class="completed-navigation__city">Rostov-on-Don Patriotic</li>
                     </ul>
-
                     <div class="completed-box">
-                        <div class="conpleted-content">
+                        <div class="completed-content">
                             <div class="title title-complited">Completed <br> projects</div>
-                        </div>
-                        <div class="completed-text">
-                            Only a small part of the work performed by our company is presented on the site. For 14
-                            years on in the construction
-                            market we have made happy more than 1000 families
-                        </div>
-                        <div class="comleted-box">
-                            <div class="completed-card">
-
+                            <div class="completed-text">
+                                Only a small part of the work performed by our company is presented on the site. For 14
+                                years on in the construction
+                                market we have made happy more than 1000 families
+                            </div>
+                            <div class="comleted-box__card">
                                 <div class="comleted-card">
                                     <div class="title title-card">City:</div>
                                     <div class="comleted-text">Rostov-on-Don LCD admiral</div>
@@ -93,16 +89,52 @@
                                     <div class="title title-card">Repair Cost:</div>
                                     <div class="comleted-text">Upon request</div>
                                 </div>
-
                             </div>
+                            <img class="comleted-arrow" src="../img/completrow.svg" alt="навигационные стрелочки">
                         </div>
                         <div class="completed-img">
                             <img src="../img/admiral.jpg" alt="изображение ремонта в ростове на дону">
                         </div>
                     </div>
+
                 </div>
             </section>
-        </main>
+            <section class="control">
+                <div class="main-container control-container">
+                    <h2 class="title control-title">online control</h2>
+                    <div class="control-camera">
+                        <img class="control-camera__line" src="../img/linecamera.svg" alt="#">
+                        <img class="control-camera__pic" src="../img/camera.svg" alt="камера">
+                        <img class="control-camera__line" src="../img/linecamera.svg" alt="#">
+                    </div>
+                    <div class="control-video">
+                        <a class="control-video__svg" href="#"><img src="../img/play.svg" alt="кнопка плэй"></a>
+                    </div>
+                    <div class="clontrol-hr">
+                        <img src="../img/hr.svg" alt="#">
+                    </div>
+                    <p class="control-text">
+                        At each facility, a camera is installed that broadcasts the progress of work on the <br>clock.
+                        At
+                        any time, you can go to our website and monitor the progress of work in <br>your apartment. You
+                        can
+                        watch the live broadcast from one of our facilities! <br>
+                        Leave a request below and you will receive a link to the broadcast.
+                    </p>
+                    <form class="control-form" action="#">
+                        <div class="input control-input"><span class="input__span">Name</span><br>
+                            <input class="input" type="text" placeholder="What is your name:">
+                        </div>
+                        <div class="input control-input"><span class="input__span">Phone</span><br>
+                            <input class="input " type="tel" placeholder="Your phone number:">
+                        </div>
+                        <button class="button control-button">SUBMIT</button>
+                    </form>
+                </div>
+            </section>
+    </div>
+    </section>
+    </main>
     </div>
 
 </body>

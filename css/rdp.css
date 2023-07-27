@@ -1,6 +1,11 @@
 .wrapper {
     margin: 0 auto;
-    font-family: Nunito Sans, 'Times New Roman', Times, serif;
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff;
 }
 
 body * {
@@ -27,7 +32,6 @@ body * {
     font-style: normal;
     font-weight: 400;
     line-height: 138.6%;
-    letter-spacing: -1.89px;
     text-transform: uppercase;
 }
 
@@ -57,12 +61,13 @@ body * {
     background-color: black;
 }
 
-.container {
-    max-width: 1438px;
+.header-container {
     margin: 0 auto;
+    max-width: 1256px;
 }
 
 .header-content {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,9 +130,14 @@ body * {
     z-index: -1;
 }
 
+.main-container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
 .calculate-container {
     height: 707px;
-    padding: 194px;
+    padding-top: 194px;
 }
 
 h1 {
@@ -170,16 +180,23 @@ h1 {
     background-color: rgba(28, 28, 28, 0);
 }
 
-.completed-container {
-    margin-top: -16px;
-    height: 1074px;
+.completed {
     background-color: #131313;
+}
+
+.completed-container {
+    padding-top: 100px;
+    padding-bottom: 400px;
+
 }
 
 .completed-navigation {
     display: flex;
-    margin-left: 881px;
-    padding-top: 107px;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 52px;
+    padding-left: 0;
 }
 
 .completed-navigation__city {
@@ -208,19 +225,17 @@ h1 {
 }
 
 .title-complited {
-    color: #E3B873;
-    font-family: Yeseva One;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 138.6%;
-    /* 37.422px */
-    letter-spacing: -1.89px;
-    text-transform: uppercase;
+    margin-bottom: 42px;
 }
 
-.comleted-box {
+.completed-box {
     display: flex;
+    justify-content: space-between;
+}
+
+.completed-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .completed-text {
@@ -229,6 +244,18 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 190.96%;
+    width: 442px;
+    margin-bottom: 42px;
+}
+
+.comleted-box__card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comleted-card {
+    width: 50%;
+    padding-bottom: 34px;
 }
 
 .title-card {
@@ -237,8 +264,43 @@ h1 {
 }
 
 .comleted-text {
+    margin-top: 9px;
     color: #FFF;
-    font-size: 14px;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 190.96%;
+    line-height: 163.68%
 }
+
+.comleted-arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-title {}
+
+.control-camera {}
+
+.control-camera__line {}
+
+.control-camera__pic {}
+
+.control-video {
+    background-image: url(../img/videocontrol.jpg);
+}
+
+.control-video::before {}
+
+.control-video__svg {}
+
+.control-text {}
+
+.control-input {}
+
+.control-button {}
