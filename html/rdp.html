@@ -108,10 +108,11 @@
                         <img class="control-camera__line" src="../img/linecamera.svg" alt="#">
                     </div>
                     <div class="control-video">
-                        <a class="control-video__svg" href="#"><img src="../img/play.svg" alt="кнопка плэй"></a>
+                        <a class="control-video__svg" href="#"><img id="play" src="../img/play.svg"
+                                alt="кнопка плэй"></a>
                     </div>
-                    <div class="clontrol-hr">
-                        <img src="../img/hr.svg" alt="#">
+                    <div class="main-container colontrol-hr">
+                        <img class="control-hr__line" src="../img/hr.svg" alt="#">
                     </div>
                     <p class="control-text">
                         At each facility, a camera is installed that broadcasts the progress of work on the <br>clock.
@@ -122,14 +123,141 @@
                         Leave a request below and you will receive a link to the broadcast.
                     </p>
                     <form class="control-form" action="#">
-                        <div class="input control-input"><span class="input__span">Name</span><br>
-                            <input class="input" type="text" placeholder="What is your name:">
+                        <div class="input-box">
+                            <div class="input control-input"><span class="input__span">Name</span><br>
+                                <input class="input" type="text" placeholder="What is your name:">
+                            </div>
+                            <div class="input control-input"><span class="input__span">Phone</span><br>
+                                <input class="input " type="tel" placeholder="Your phone number:">
+                            </div>
+                            <button class="button control-button">SUBMIT</button>
                         </div>
-                        <div class="input control-input"><span class="input__span">Phone</span><br>
-                            <input class="input " type="tel" placeholder="Your phone number:">
+                        <div class="checkbox control-checkbox">
+                            <input type="checkbox" id="control-checkbox">
+                            <label for="checkbox control-checkbox">I agree to the processing of personal data</label>
                         </div>
-                        <button class="button control-button">SUBMIT</button>
                     </form>
+                </div>
+            </section>
+            <section class="repair">
+                <div class="main-container repair-container">
+                    <div class="repair-title">TYPES OF REPAIR</div>
+                    <div class="repair-hammer">
+                        <img class="repair-hammer__pic" src="../img/repair.svg" alt="#">
+                    </div>
+                    <div class="repair-boxcard">
+                        <div class="repair-card decor">
+                            <img class="repair-img" src="../img/decor.jpg" alt="декор">
+                            <div class="repair-content ">
+                                <div class="card-title">Redecorating</div>
+                                <ul class="repair-list">
+                                    <li>• &nbsp Dismantling of old coatings </li>
+                                    <li>• &nbsp Wallpapering</li>
+                                    <li>• &nbsp Painting walls and ceilings </li>
+                                    <li>• &nbsp Laying flooring </li>
+                                    <li>• &nbsp Replacing plumbing</li>
+                                    <li>• &nbsp Replacing sockets and switches</li>
+                                    <li>• &nbsp Replacing doors</li>
+                                </ul>
+                                <div class="title repair-price">from 900 rub / m2</div>
+                            </div>
+                        </div>
+                        <div class="repair-card over">
+                            <img class="repair-img" src="../img/over.jpg" alt="#">
+                            <div class="repair-content ">
+                                <div class="card-title">Overhaul</div>
+                                <ul class="repair-list">
+                                    <li>• &nbsp Dismantling of old coatings</li>
+                                    <li>• &nbsp Wallpapering</li>
+                                    <li>• &nbsp Painting walls and ceilings </li>
+                                    <li>• &nbsp Laying flooring </li>
+                                    <li>• &nbsp Replacing plumbing</li>
+                                    <li>• &nbsp Replacing sockets and switches</li>
+                                    <li>• &nbsp Replacing doors</li>
+                                </ul>
+                                <div class="title repair-price">from 1800 rub / m2</div>
+                            </div>
+                        </div>
+                        <div class="repair-card design">
+                            <img class="repair-img" src="../img/design.jpg" alt="#">
+                            <div class="repair-content ">
+                                <div class="card-title">Designer Repair</div>
+                                <ul class="repair-list">
+                                    <li>• &nbsp Dismantling of old coatings</li>
+                                    <li>• &nbsp Wallpapering</li>
+                                    <li>• &nbsp Painting walls and ceilings </li>
+                                    <li>• &nbsp Laying flooring </li>
+                                    <li>• &nbsp Replacing plumbing</li>
+                                    <li>• &nbsp Replacing sockets and switches</li>
+                                    <li>• &nbsp Replacing doors</li>
+                                </ul>
+                                <div class="title repair-price">from 4000 rub / m2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feadback">
+                <div class="main-container feadback-container">
+                    <div class="pluses">
+                        <div class="pluses-part">
+                            <div class="pluses-part-number">01</div>
+                            <p class="pluses-part-text">Our specialist will arrive for measurements per day <br>
+                                contact, or appoint a date convenient for you</p>
+                        </div>
+                        <div class="pluses-part">
+                            <div class="pluses-part-number"> 02</div>
+                            <p class="pluses-part-text">Free metering</p>
+                        </div>
+                        <div class="pluses-part">
+                            <div class="pluses-part-number"> 03</div>
+                            <p class="pluses-part-text">Free consultation</p>
+                        </div>
+                        <div class="pluses-part">
+                            <div class="pluses-part-number">04</div>
+                            <p class="pluses- part-text">Get a cost estimate and <br>
+                                the timing of your future repairs</p>
+                        </div>
+                    </div>
+                    <div class="pluses-form">
+                        <div class="pluses-form-box">
+                            <h3 class="pluses-form-title">Leave a request for free <br> departure of the measurer</h3>
+                            <form class="pluses-form-table">
+                                <div class="feadback-inputs">
+                                    <div class="input-box">
+                                        <div class="input feadback-input"><span
+                                                class="input__span feadback-span">Name</span><br>
+                                            <input class="input feadback-placeholder" type="text"
+                                                placeholder="What is your name:">
+                                        </div>
+                                        <div class="input feadback-input"><span
+                                                class="input__span feadback-span">Phone</span><br>
+                                            <input class="input feadback-placeholder" type="tel"
+                                                placeholder="Your phone number:">
+                                        </div>
+                                        <div class="input feadback-input"><span
+                                                class="input__span feadback-span">Email</span><br>
+                                            <input class="input feadback-placeholder" type="email"
+                                                placeholder="Your email:">
+                                        </div>
+                                        <div class="checkbox feadback-checkbox">
+                                            <input type="checkbox" id="feadback-checkbox">
+                                            <label for="checkbox feadback-checkbox">I agree to the processing ofpersonal
+                                                <br> data</label>
+                                        </div>
+                                    </div>
+                                    <button class="button feadback-button">Call the measurer</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pluses-save">
+                        <div class="pig">
+                            <img src="../img/pig.svg" alt="свинья-копилка">
+                        </div>
+                        <div class="save-text">
+                            Help save 10 - 20% of the <br> cost of materials
+                        </div>
+                    </div>
                 </div>
             </section>
     </div>

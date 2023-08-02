@@ -5,12 +5,11 @@
     font-weight: normal;
     font-size: 11px;
     line-height: 15px;
-    color: #ffffff;
 }
 
 body * {
     box-sizing: border-box;
-    /*эта строчка влияет на margin про который ты говорил но если ее убрать все ломается*/
+    margin: 0px;
 }
 
 .button {
@@ -122,7 +121,6 @@ body * {
 
 .calculate::before {
     background: rgba(0, 0, 0, 0.70);
-    /*задаем цвет и прозрачность затемнения*/
     content: "";
     position: absolute;
     width: 100%;
@@ -278,29 +276,351 @@ h1 {
     width: 50%;
 }
 
+.control {
+    padding-bottom: 147px;
+}
+
 .control-container {
+    background: none;
+    margin-top: -330px;
+    margin-bottom: 31px;
     display: flex;
     flex-direction: column;
 }
 
-.control-title {}
+.control-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 13px;
+}
 
-.control-camera {}
+.control-camera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.control-camera__line {}
-
-.control-camera__pic {}
+.control-camera__pic {
+    margin: 0 9px;
+}
 
 .control-video {
     background-image: url(../img/videocontrol.jpg);
+    position: relative;
+    height: 434px;
+    width: 817px;
+    margin: 31px auto 0;
+    z-index: 3;
+
 }
 
-.control-video::before {}
+.control-video::before {
+    background: rgba(0, 0, 0, 0.70);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 434px;
+    z-index: -1;
+}
 
-.control-video__svg {}
+.control-video__svg {
+    display: contents;
+    width: 156px;
+    height: 145px;
+}
 
-.control-text {}
+#play {
+    padding: 174px 366px;
+}
 
-.control-input {}
+.control-hr__line {
+    width: 55px;
+    margin: 62px auto 34px;
+}
 
-.control-button {}
+.control-text {
+    color: #363636;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 204.6%;
+}
+
+.input-box {
+    display: flex;
+    margin-bottom: 33px;
+    justify-content: center;
+}
+
+.control-input {
+    margin-right: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control-button {
+    width: 200px;
+    height: 51px;
+    margin-left: 49px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.control-checkbox {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+#control-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+#control-checkbox+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 1px;
+
+}
+
+#control-checkbox:checked+label::before {
+    border-color: #e3b873;
+    background-color: #e3b873;
+    background-image: url(../img/checked.svg);
+}
+
+.repair-container {
+    min-width: 1236px;
+}
+
+.repair-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.repair-hammer {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.repair-boxcard {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.repair-card {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    font-family: Yeseva One;
+    padding-bottom: 124px;
+}
+
+.repair-img {
+    margin-bottom: -125px;
+}
+
+.repair-content {
+    background-color: #fff;
+    width: 330px;
+    height: 286px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card-title {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-bottom: 13px;
+    ;
+}
+
+.repair-list {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    margin-bottom: 23px;
+    list-style: none;
+}
+
+.repair-price {
+    color: #fff;
+    background: #e3b873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    width: 228px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feadback-container {
+    min-width: 1236px;
+    display: flex;
+    justify-content: space-between;
+    height: 707px;
+}
+
+.pluses {
+    height: 540px;
+    background: url(../img/feadback.png);
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pluses-part {
+    display: flex;
+    align-items: center;
+    margin-bottom: 95px;
+    margin-left: 30%;
+}
+
+.pluses-part-number {
+    color: #fff;
+    background: #e3b873;
+    border: 8px solid #ffffff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 25px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+}
+
+.pluses-part-text {
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(54, 54, 54, 1);
+}
+
+.pluses-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pluses-form-box {
+    width: 506px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    font-style: normal;
+    font-weight: normal;
+    justify-content: space-around;
+    margin-bottom: 38px;
+}
+
+.pluses-form-title {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.pluses-form-table {}
+
+.feadback-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feadback-input {}
+
+.feadback-span {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.feadback-placeholder {
+    color: #FFF;
+}
+
+.feadback-checkbox {
+    margin-top: 16px;
+}
+
+#feadback-checkbox {
+    color: #FFF;
+}
+
+.feadback-button {
+    width: 213px;
+    height: 51px;
+    align-self: flex-end;
+}
+
+.pluses-save {
+    display: flex;
+    align-items: center;
+}
+
+.save-text {
+    width: 344px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #e3b873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    padding-bottom: 20px;
+}
+
+.pig {}
