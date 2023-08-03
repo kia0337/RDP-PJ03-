@@ -7,7 +7,7 @@
     line-height: 15px;
 }
 
-body * {
+body {
     box-sizing: border-box;
     margin: 0px;
 }
@@ -389,6 +389,7 @@ h1 {
     user-select: none;
 }
 
+#feadback-checkbox,
 #control-checkbox+label::before {
     content: "";
     display: inline-block;
@@ -405,10 +406,18 @@ h1 {
 
 }
 
+#feadback-checkbox,
 #control-checkbox:checked+label::before {
     border-color: #e3b873;
     background-color: #e3b873;
     background-image: url(../img/checked.svg);
+    /* width: 19px;
+    height: 19px; */
+}
+
+#control-checkbox:checked {
+    accent-color: #e3b873;
+
 }
 
 .repair-container {
@@ -428,8 +437,6 @@ h1 {
     justify-content: center;
 
 }
-
-
 
 .repair-boxcard {
     margin-top: 31px;
@@ -568,10 +575,11 @@ h1 {
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    margin-bottom: 39px;
 }
 
-.pluses-form-table {}
+.pluses-form-table {
+    width: 408px;
+}
 
 .feadback-inputs {
     display: flex;
@@ -579,24 +587,37 @@ h1 {
     margin-bottom: 39px;
 }
 
-.input-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .feadback-input {}
+
+.feadback-input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
 
 .feadback-span {
     color: rgba(255, 255, 255, 0.50);
 }
 
 .feadback-placeholder {
-    color: #FFF;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.feadback-placeholder::placeholder {
+    color: #fff;
+
 }
 
 .feadback-checkbox {
-    margin-top: 16px;
+    margin-top: -32pxpx;
+}
+
+.feadback-checkbox-label {
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
 }
 
 #feadback-checkbox {
@@ -623,4 +644,62 @@ h1 {
     padding-bottom: 20px;
 }
 
-.pig {}
+.fantasies-container {
+    min-width: 1236px;
+    height: 864px;
+}
+
+.fantasies-container-box {
+    display: flex;
+    background-image: url();
+}
+
+.fantasies-title {
+    font-family: Yeseva One;
+    font-size: 27px;
+}
+
+.fantasies-list {
+    margin-right: 189px;
+}
+
+.fantasies-item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.fantasies-item:nth-child(1) {
+    text-decoration: underline;
+}
+
+.fantasies-first-colomn {
+    display: flex;
+    flex-direction: column;
+}
+
+#clock {
+    width: 354px;
+    height: 558px;
+    padding-bottom: 39px;
+}
+
+#tv {
+    width: 354px;
+    height: 350px;
+}
+
+.fantasies-second-colomn {
+    display: flex;
+    flex-direction: column;
+}
+
+#sofa {
+    width: 354px;
+    height: 275px;
+    padding-bottom: 37px;
+}
+
+#flower {
+    width: 354px;
+    height: 625px;
+}
