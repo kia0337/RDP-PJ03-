@@ -651,7 +651,8 @@ h1 {
 
 .fantasies-container-box {
     display: flex;
-    background-image: url();
+    background-image: url(../img/feadbackground.png);
+
 }
 
 .fantasies-title {
@@ -703,3 +704,43 @@ h1 {
     width: 354px;
     height: 625px;
 }
+
+.clients-container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.client-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.logo-hands {
+    display: flex;
+    justify-content: center;
+}
+
+.client-text {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 39px;
+}
+
+
+.client-cardbox {
+    display: flex;
+
+}
+
+.client-foto {
+    display: flex;
+}
+
+.client-content {}
+
+.
