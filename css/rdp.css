@@ -389,7 +389,6 @@ h1 {
     user-select: none;
 }
 
-#feadback-checkbox,
 #control-checkbox+label::before {
     content: "";
     display: inline-block;
@@ -406,19 +405,16 @@ h1 {
 
 }
 
-#feadback-checkbox,
 #control-checkbox:checked+label::before {
     border-color: #e3b873;
     background-color: #e3b873;
     background-image: url(../img/checked.svg);
-    /* width: 19px;
-    height: 19px; */
 }
 
-#control-checkbox:checked {
+/* #control-checkbox:checked {
     accent-color: #e3b873;
 
-}
+} */
 
 .repair-container {
     min-width: 1236px;
@@ -646,36 +642,48 @@ h1 {
 
 .fantasies-container {
     min-width: 1236px;
-    height: 864px;
+
 }
 
 .fantasies-container-box {
     display: flex;
     background-image: url(../img/feadbackground.png);
-
+    height: 864px;
+    margin-top: 242px;
 }
 
 .fantasies-title {
     font-family: Yeseva One;
     font-size: 27px;
+    padding-left: 40px;
 }
 
 .fantasies-list {
     margin-right: 189px;
+    margin-left: 99px;
+    margin-top: 138px;
 }
 
 .fantasies-item {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 20px;
     list-style: none;
     text-decoration: none;
+    margin-bottom: 25px;
 }
 
 .fantasies-item:nth-child(1) {
     text-decoration: underline;
+    color: #E3B873;
+    ;
 }
 
 .fantasies-first-colomn {
     display: flex;
     flex-direction: column;
+    margin-top: -41px;
+    margin-right: 43px;
 }
 
 #clock {
@@ -692,6 +700,7 @@ h1 {
 .fantasies-second-colomn {
     display: flex;
     flex-direction: column;
+    margin-top: -113px;
 }
 
 #sofa {
@@ -706,6 +715,7 @@ h1 {
 }
 
 .clients-container {
+    padding-top: 110px;
     max-width: 1171px;
     margin: 0 auto;
 }
@@ -721,6 +731,7 @@ h1 {
 .logo-hands {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .client-text {
@@ -734,13 +745,175 @@ h1 {
 
 .client-cardbox {
     display: flex;
+    justify-content: space-between;
+}
 
+.client-card {
+    width: 376px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
 .client-foto {
     display: flex;
+    border-radius: 50%;
+    margin-right: 25px;
+
 }
 
-.client-content {}
+.client-card-head {
+    margin: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.client-content {
+    margin: 20px 0 0 20px;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+    margin-bottom: 90px;
+}
+
+.client-foto-title {
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    margin: 0;
+    font-family: Yeseva One, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.clients-terms {
+    width: 294px;
+    height: 54px;
+    background: #e3b873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -27px;
+    padding: 0 17px;
+}
+
+.term-text {
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.client-city {
+    display: flex;
+    max-width: 1256px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.client-city::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.city {
+    width: 50%;
+}
+
+.questions {
+    background: url(../img/city-big.svg);
+    position: relative;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.questions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.question-container {
+    position: relative;
+}
+
+.qustion-form-box {
+    width: 883px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.qustion-form-box-holder {
+    width: 883px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.qustion-form-box {
+    width: 883px;
+    height: 100%;
+    justify-content: start;
+    margin-bottom: 0;
+    margin-top: -222px;
+    background-color: black;
+}
+
+.question-title {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 62px;
+}
+
+.question-media-link {
+    width: 71px;
+    display: flex;
+    justify-content: space-between;
+    margin: 26px auto 0;
+}
+
+.question-map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.qustion-form-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 34px;
+    color: #FFF;
+    font-family: Yeseva One;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.qustion-form-inputs {
+    width: 883px;
+    height: 100%;
+    justify-content: start;
+    margin-bottom: 0;
+    margin-top: -222px;
+}
+
+.question-input-box1 {
+    display: flex;
+    justify-content: space-between;
+}
 
 .
